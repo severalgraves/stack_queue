@@ -174,14 +174,14 @@ class Stack : private TVector<T>
 	using TVector<T>::sz;
 	using TVector<T>::capacity;
 	using TVector<T>::pMem;
-public:
 	using TVector<T>::push_back;
 	using TVector<T>::pop_back;
+	using TVector<T>::resize;
+public:
 	using TVector<T>::isFull;
 	using TVector<T>::isEmpty;
 	using TVector<T>::size;
 	using TVector<T>::getCapacity;
-	using TVector<T>::resize;
 	Stack() : TVector<T>(0) { };
 	void push(T elem)
 	{
@@ -207,11 +207,11 @@ class Queue : private TVector<T>
 	using TVector<T>::pMem;
 	size_t front;
 	size_t back;
-public:
 	using TVector<T>::push_back;
+	using TVector<T>::resize;
+public:
 	using TVector<T>::isFull;
 	using TVector<T>::isEmpty;
-	using TVector<T>::resize;
 	using TVector<T>::size;
 	using TVector<T>::getCapacity;
 	Queue() : TVector<T>(0), front(0), back(0) { }
