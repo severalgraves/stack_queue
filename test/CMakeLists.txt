@@ -1,4 +1,4 @@
-set(target ${MP2_TESTS})
+set(target ${STACK_AND_QUEUE_TESTS})
 
 file(GLOB hdrs "*.h*")
 file(GLOB srcs "*.cpp")
