@@ -1,6 +1,6 @@
 name: STACK_QUEUE
 
-on: [push, pull_request]
+on: push
 
 jobs:
   windows-build:
