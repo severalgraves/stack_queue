@@ -146,7 +146,7 @@ public:
 	}
 	void insert(T elem, size_t ind)
 	{
-		if (ind < 0 || ind >= size)
+		if (ind < 0 || ind >= capacity)
 			throw std::out_of_range("Index should be greater than zero and less than vector size");
 		if (sz == capacity)
 			resize(sz + 1);
@@ -157,7 +157,7 @@ public:
 	}
 	void erase(size_t ind)
 	{
-		if (ind < 0 || ind >= size)
+		if (ind < 0 || ind >= capacity)
 			throw std::out_of_range("Index should be greater than zero and less than vector size");
 		if (sz == 0)
 			throw std::logic_error("Vector is empty");
