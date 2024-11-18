@@ -77,7 +77,8 @@ TEST(Queue, can_fill_correctly)
 {
     Queue<int> q;
     q.push(8);
-    q.push(10); 
-    q.pop(); 
-    q.push(14); 
+    q.push(10);
+    q.pop();
+    q.push(14);
     EXPECT_EQ(0, q.getBackIndex());
+}
