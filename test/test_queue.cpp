@@ -62,7 +62,7 @@ TEST(Queue, can_get_front)
     Queue<int> q;
     q.push(1);
     q.push(2);
-    EXPECT_EQ(2, q.getFront());
+    EXPECT_EQ(1, q.getFront());
 }
 
 TEST(Queue, can_get_back)
