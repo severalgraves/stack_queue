@@ -190,7 +190,7 @@ TEST(TVector, can_push_front_elem_with_resize)
 
 TEST(TVector, can_pop_back_element)
 {
-    int*  = new int[3] {8, 10, 12};
+    int* a  = new int[3] {8, 10, 12};
     TVector<int> v1(a, 3);
     delete[] a;
     int* a_check = new int[2] {8, 10};
@@ -262,6 +262,6 @@ TEST(TVector, can_erase_elem)
 
 TEST(Vector, cant_erase_element_empty_Vector)
 {
-    Vector<int> v;
+    TVector<int> v;
     ASSERT_ANY_THROW(v.erase(1));
 }
