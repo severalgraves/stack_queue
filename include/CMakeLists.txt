@@ -1,4 +1,4 @@
-set(target ${STACK_QUEUE_CUSTOM})
+set(target ${MP2_CUSTOM})
 
 file(GLOB hdrs "*.h*")
 
